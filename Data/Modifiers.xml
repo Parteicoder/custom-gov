@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Modifiers>
+        <Row>
+            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS</ModifierType>
+        </Row>
+    </Modifiers>
+
+    <ModifierArguments>
+        <Row>
+            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+    </ModifierArguments>
+
+    <GovernorPromotionModifiers>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
+            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+        </Row>
+    </GovernorPromotionModifiers>
+</GameData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Governors>
+        <Row>
+            <GovernorType>GOVERNOR_KEQING</GovernorType>
+            <Name>LOC_GOVERNOR_KEQING_NAME</Name>
+            <Description>LOC_GOVERNOR_KEQING_DESCRIPTION</Description>
+        </Row>
+    </Governors>
+
+    <GovernorPromotions>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
+            <Name>LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME</Name>
+            <Description>LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION</Description>
+            <GovernorType>GOVERNOR_KEQING</GovernorType>
+            <Level>0</Level>
+        </Row>
+    </GovernorPromotions>
+</GameData>

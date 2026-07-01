@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <BaseGameText>
+        <Row Tag="LOC_GOVERNOR_KEQING_NAME">
+            <Text>Keqing - Yuheng der Sieben Sterne</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_KEQING_DESCRIPTION">
+            <Text>Starke wirtschaftliche Unterstützung und schnelles Bauen.</Text>
+        </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME">
+            <Text>Elektro-Durchbruch</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
+            <Text>Handelsrouten aus dieser Stadt erhalten +2 Gold.</Text>
+        </Row>
+    </BaseGameText>
+</GameData>

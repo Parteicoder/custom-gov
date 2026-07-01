@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="custom-gov-keqing" version="1">
+    <Properties>
+        <Name>Custom Governor - Keqing</Name>
+        <Description>Keqing als einzigartiger Gouverneur für Civilization VI</Description>
+        <Authors>Parteicoder</Authors>
+    </Properties>
+
+    <Dependencies>
+        <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Rise and Fall"/>
+        <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Gathering Storm"/>
+    </Dependencies>
+
+    <Files>
+        <File>Data/Governors.xml</File>
+        <File>Data/Modifiers.xml</File>
+        <File>Data/Text/Governors_Text.xml</File>
+    </Files>
+</Mod>
