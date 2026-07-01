@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <IconDefinitions>
-        <!-- Keqing Portrait (256x256) -->
+        <!-- Keqing - Using existing Governor icon as placeholder -->
         <Row>
             <Name>ICON_GOVERNOR_KEQING</Name>
             <Atlas>ICON_ATLAS_GOVERNORS</Atlas>
             <Index>0</Index>
         </Row>
 
-        <!-- Promotion Icons (kleiner) -->
+        <!-- Ningguang - Using another existing Governor icon as placeholder -->
+        <Row>
+            <Name>ICON_GOVERNOR_NINGGUANG</Name>
+            <Atlas>ICON_ATLAS_GOVERNORS</Atlas>
+            <Index>1</Index>
+        </Row>
+
+        <!-- Keqing Promotions -->
         <Row>
             <Name>ICON_GOVERNOR_PROMOTION_KEQING_BASE</Name>
             <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
@@ -33,6 +40,28 @@
             <Name>ICON_GOVERNOR_PROMOTION_KEQING_3B</Name>
             <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
             <Index>4</Index>
+        </Row>
+
+        <!-- Ningguang Promotions -->
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_NINGGUANG_BASE</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>5</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_NINGGUANG_1</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>6</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_NINGGUANG_2</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>7</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_NINGGUANG_3</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>8</Index>
         </Row>
     </IconDefinitions>
 </GameData>
