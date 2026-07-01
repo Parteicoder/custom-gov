@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Modifiers>
-        <!-- Keqing Promotion 1: +2 Gold in all cities across the empire -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
-        </Row>
-
-        <!-- Keqing Promotion 2: +15% district production in all cities -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_ALL_DISTRICTS_PRODUCTION</ModifierType>
-        </Row>
-
-        <!-- Keqing Promotion 3A: +1 Science in all cities across the empire -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
-        </Row>
-
-        <!-- Keqing Promotion 3B: +1 Culture in all cities across the empire -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
-        </Row>
-
         <!-- Ningguang Base: +4 Gold on trade routes from all cities -->
         <Row>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
@@ -51,49 +27,6 @@
     </Modifiers>
 
     <ModifierArguments>
-        <!-- Keqing empire gold -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
-            <Name>YieldType</Name>
-            <Value>YIELD_GOLD</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
-            <Name>Amount</Name>
-            <Value>2</Value>
-        </Row>
-
-        <!-- Keqing district production -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
-            <Name>Amount</Name>
-            <Value>15</Value>
-        </Row>
-
-        <!-- Keqing empire science -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
-            <Name>YieldType</Name>
-            <Value>YIELD_SCIENCE</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
-            <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-
-        <!-- Keqing empire culture -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
-            <Name>YieldType</Name>
-            <Value>YIELD_CULTURE</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
-            <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-
         <!-- Ningguang trade gold -->
         <Row>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
@@ -139,22 +72,6 @@
     </ModifierArguments>
 
     <GovernorPromotionModifiers>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
-            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
-        </Row>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_2</GovernorPromotionType>
-            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
-        </Row>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3A</GovernorPromotionType>
-            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
-        </Row>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3B</GovernorPromotionType>
-            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
-        </Row>
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_BASE</GovernorPromotionType>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
