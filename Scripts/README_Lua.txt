@@ -1,13 +1,15 @@
-Lua Development Progress for Ningguang:
+Ningguang Lua Development - Current Focus: City-States
 
-Current Status:
-- Basic script structure created
-- Event hook prepared (OnGovernorAssigned)
+We are currently implementing support for assigning Ningguang to City-States (similar to Amani).
 
-Next Steps (in order of difficulty):
-1. Make Ningguang assignable to City-States (like Amani)
-2. Add custom effects when assigned to City-States
-3. Extend support to normal foreign cities (very advanced)
-4. Create UI support if needed
+Planned effects when assigned to a City-State:
+- Increased Influence per turn
+- Gold bonus
+- Possibly faster Suzerain status
 
-Warning: Modifying Governor assignment logic can be unstable and may conflict with other mods (especially UI mods).
+Next steps:
+1. Properly detect if the target city is a City-State
+2. Apply Influence and Gold bonuses
+3. Test stability
+
+After City-States are working, we can discuss extending to normal foreign cities.

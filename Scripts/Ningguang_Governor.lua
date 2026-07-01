@@ -1,25 +1,28 @@
--- Ningguang Governor Lua Script
--- Goal: Allow Ningguang to be assigned to City-States and apply custom effects
+-- Ningguang Governor - City-State Support
+-- Allows Ningguang to be assigned to City-States and applies custom effects
 
-print("[Custom-Gov] Ningguang Governor script loaded");
+print("[Custom-Gov] Ningguang script loaded");
 
--- Configuration
-local NINGGUANG_GOVERNOR_TYPE = "GOVERNOR_NINGGUANG";
+local NINGGUANG_TYPE = "GOVERNOR_NINGGUANG";
 
--- Helper function to check if a governor is Ningguang
+-- Check if the assigned governor is Ningguang
 function IsNingguang(governorType)
-    return governorType == NINGGUANG_GOVERNOR_TYPE;
+    return governorType == NINGGUANG_TYPE;
 end
 
--- Event: When a Governor is assigned
--- This is a simplified version. Real implementation needs proper GameEvents.
-function OnGovernorAssigned(playerID, governorID, cityID)
-    -- TODO: Add proper checks here
-    -- For now we just print debug info
-    print("[Custom-Gov] Governor assigned - Player: " .. tostring(playerID) .. ", Governor: " .. tostring(governorID) .. ", City: " .. tostring(cityID));
+-- Main function when a Governor is assigned
+function OnGovernorAssigned(playerID, governorType, cityID)
+    if not IsNingguang(governorType) then
+        return;
+    end
+
+    print("[Custom-Gov] Ningguang assigned to city ID: " .. tostring(cityID));
+
+    -- TODO: Add check if the city is a City-State
+    -- TODO: Add influence bonus or other effects
 end
 
--- Register the event (this may need adjustment depending on Civ 6 version)
--- Events.GovernorAssigned.Add(OnGovernorAssigned);
+-- Register the event
+Events.GovernorAssigned.Add(OnGovernorAssigned);
 
-print("[Custom-Gov] Ningguang script initialized");
+print("[Custom-Gov] Ningguang City-State script initialized");
