@@ -11,14 +11,14 @@
             <Text>Yuheng</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_KEQING_DESCRIPTION">
-            <Text>Eine schnelle, entschlossene Gouverneurin mit reichsweiten Boni für Aufbau, Wirtschaft und Entwicklung.</Text>
+            <Text>Eine entschlossene Gouverneurin, die Liyues Handelsrouten nutzt, um Wachstum, Aufbau und Verwaltung zu beschleunigen.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME">
-            <Text>Blitzender Aufbau</Text>
+            <Text>Magnet des Hafens</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
-            <Text>Reichsweit: +1 Produktion in allen Städten.</Text>
+            <Text>Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
             <Text>Jadeklinge der Verwaltung</Text>
