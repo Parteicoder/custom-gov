@@ -11,38 +11,38 @@
             <Text>Yuheng</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_KEQING_DESCRIPTION">
-            <Text>Eine entschlossene Gouverneurin, die Liyues Handelsrouten nutzt, um Wachstum, Aufbau und Verwaltung zu beschleunigen.</Text>
+            <Text>Eine entschlossene Gouverneurin, die Liyues Handelsrouten nutzt, um Bevölkerung, Aufbau und Verwaltung zu beschleunigen.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME">
             <Text>Magnet des Hafens</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
-            <Text>Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert. Wenn Ningguang ebenfalls eingesetzt ist, steigt die Chance auf 50 %.</Text>
+            <Text>Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
             <Text>Jadeklinge der Verwaltung</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION">
-            <Text>Reichsweit: +2 Gold in allen Städten.</Text>
+            <Text>Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält die Ursprungsstadt +25 Produktion und Liyue erhält +50 Gold.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_NAME">
             <Text>Yuhengs Planung</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_DESCRIPTION">
-            <Text>Reichsweit: +15 % Produktion für Bezirke in allen Städten.</Text>
+            <Text>Erhöht die Chance von Keqings Handelsrouten-Effekt um +15 Prozentpunkte.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_NAME">
             <Text>Schneller Beschluss</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_DESCRIPTION">
-            <Text>Reichsweit: +1 Wissenschaft in allen Städten.</Text>
+            <Text>Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält Liyue +30 Wissenschaft und +30 Kultur.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_NAME">
             <Text>Ordnung der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_DESCRIPTION">
-            <Text>Reichsweit: +1 Kultur in allen Städten.</Text>
+            <Text>Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält die Ursprungsstadt +3 Loyalität und die Zielstadt verliert zusätzlich 3 Loyalität.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_NINGGUANG_NAME">
@@ -62,19 +62,19 @@
             <Text>Vertrag der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION">
-            <Text>Reichsweit: +4 Gold auf Handelsrouten aus eigenen Städten. Tag-Team: Wenn Keqing über eine internationale Handelsroute Bevölkerung abgreift, verliert die Zielstadt zusätzlich 5 Loyalität.</Text>
+            <Text>Reichsweit: +4 Gold auf Handelsrouten aus eigenen Städten. Tag-Team: Wenn Keqing eingesetzt ist, erhöht Ningguang die Chance von Keqings Handelsrouten-Effekt um +15 Prozentpunkte. Bei Erfolg verliert die Zielstadt zusätzlich 5 Loyalität.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_NAME">
             <Text>Wirtschaftlicher Druck</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_DESCRIPTION">
-            <Text>Reichsweit: +3 Gold aus Handelsrouten mit fremden Städten.</Text>
+            <Text>Reichsweit: +3 Gold aus Handelsrouten mit fremden Städten. Tag-Team: Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält Liyue zusätzlich +75 Gold.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_NAME">
             <Text>Politischer Einfluss</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_DESCRIPTION">
-            <Text>Reichsweit: +2 Einflusspunkte pro Runde auf Stadtstaaten.</Text>
+            <Text>Reichsweit: +2 Einflusspunkte pro Runde auf Stadtstaaten. Tag-Team: Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, verliert die Zielstadt zusätzlich 5 Loyalität.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_3_NAME">
             <Text>Handelsnetzwerk der Qixing</Text>
