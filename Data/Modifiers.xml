@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Modifiers>
-        <!-- Base: +2 Gold auf Handelsrouten -->
+        <!-- Base: +3 Gold auf Handelsrouten (etwas stärker) -->
         <Row>
             <ModifierId>KEQING_TRADE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS</ModifierType>
         </Row>
 
-        <!-- Promotion 1: +1 Builder Charge -->
+        <!-- Promotion 1: +1 Builder Charge + 20% schneller -->
         <Row>
             <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_BUILDER_CHARGES</ModifierType>
@@ -17,19 +17,19 @@
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
         </Row>
 
-        <!-- Promotion 2: Resource Boni -->
+        <!-- Promotion 2: +1 Prod +1 Gold auf verbesserte Ressourcen -->
         <Row>
-            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IMPROVED_RESOURCE_YIELD</ModifierType>
         </Row>
 
-        <!-- Promotion 3A: Great Engineer Points -->
+        <!-- Promotion 3A: +3 Great Engineer Punkte -->
         <Row>
             <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS</ModifierType>
         </Row>
 
-        <!-- Promotion 3B: Military (Millelith) -->
+        <!-- Promotion 3B: Millelith +7 Kampfstärke -->
         <Row>
             <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
             <ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
@@ -46,7 +46,7 @@
         <Row>
             <ModifierId>KEQING_TRADE_GOLD</ModifierId>
             <Name>Amount</Name>
-            <Value>2</Value>
+            <Value>3</Value>
         </Row>
 
         <!-- Builder -->
@@ -58,18 +58,28 @@
         <Row>
             <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
             <Name>Amount</Name>
-            <Value>15</Value>
+            <Value>20</Value>
         </Row>
 
-        <!-- Resource Production -->
+        <!-- Resource Bonus -->
         <Row>
-            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_PRODUCTION</Value>
         </Row>
         <Row>
-            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
             <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
+            <Name>YieldType2</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
+            <Name>Amount2</Name>
             <Value>1</Value>
         </Row>
 
@@ -82,7 +92,7 @@
         <Row>
             <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
             <Name>Amount</Name>
-            <Value>2</Value>
+            <Value>3</Value>
         </Row>
 
         <!-- Millelith Strength -->
@@ -94,7 +104,7 @@
         <Row>
             <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
             <Name>Amount</Name>
-            <Value>5</Value>
+            <Value>7</Value>
         </Row>
     </ModifierArguments>
 
@@ -113,7 +123,7 @@
         </Row>
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_2</GovernorPromotionType>
-            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
         </Row>
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3A</GovernorPromotionType>

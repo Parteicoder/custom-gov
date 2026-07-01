@@ -12,35 +12,35 @@
             <Text>Elektro-Durchbruch</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
-            <Text>Handelsrouten aus dieser Stadt erhalten +2 Gold.</Text>
+            <Text>Handelsrouten aus dieser Stadt erhalten +3 Gold.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
             <Text>Blitzschneller Ausbau</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION">
-            <Text>Erbauer erhalten +1 Charge. Bezirke werden 15% schneller gebaut.</Text>
+            <Text>Erbauer erhalten +1 Charge. Bezirke werden 20% schneller gebaut.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_NAME">
             <Text>Geo-Harmonie</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_DESCRIPTION">
-            <Text>Jede verbesserte Ressource gibt +1 Produktion.</Text>
+            <Text>Jede verbesserte Ressource gibt +1 Produktion und +1 Gold.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_NAME">
             <Text>Meisterin der Wunder</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_DESCRIPTION">
-            <Text>+2 Great Engineer Punkte. Wunder geben zusätzliche Effekte durch Donnernder Antrieb.</Text>
+            <Text>+3 Great Engineer Punkte. Starke Synergie mit Donnernder Antrieb.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_NAME">
             <Text>Elektro-Kommando</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_DESCRIPTION">
-            <Text>Millelith erhalten +5 Kampfstärke.</Text>
+            <Text>Millelith erhalten +7 Kampfstärke.</Text>
         </Row>
     </BaseGameText>
 </GameData>
