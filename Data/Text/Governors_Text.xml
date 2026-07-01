@@ -18,7 +18,7 @@
             <Text>Magnet des Hafens</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
-            <Text>Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.</Text>
+            <Text>Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert. Wenn Ningguang ebenfalls eingesetzt ist, steigt die Chance auf 50 %.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
             <Text>Jadeklinge der Verwaltung</Text>
@@ -55,14 +55,14 @@
             <Text>Tianquan</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_NINGGUANG_DESCRIPTION">
-            <Text>Politische und wirtschaftliche Macht mit reichsweiten Boni für Handel, Stadtstaaten und Große Persönlichkeiten.</Text>
+            <Text>Politische und wirtschaftliche Macht. Als Tag-Team mit Keqing verstärkt sie den Druck auf fremde Städte, die über Liyues Handelsrouten angebunden sind.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_NAME">
             <Text>Vertrag der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION">
-            <Text>Reichsweit: +4 Gold auf Handelsrouten aus eigenen Städten.</Text>
+            <Text>Reichsweit: +4 Gold auf Handelsrouten aus eigenen Städten. Tag-Team: Wenn Keqing über eine internationale Handelsroute Bevölkerung abgreift, verliert die Zielstadt zusätzlich 5 Loyalität.</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_NAME">
             <Text>Wirtschaftlicher Druck</Text>
