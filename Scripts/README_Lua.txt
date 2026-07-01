@@ -1,8 +1,7 @@
-Warning: Assigning Governors to normal foreign player cities is highly experimental.
+Experimental Foreign City Support Active
 
-Current implementation:
-- Works for City-States
-- Has placeholder effects for normal foreign cities
-- May cause issues or not work reliably
+- City-State: Strong bonuses (+100 Influence, +200 Gold one-time)
+- Foreign cities: Smaller bonus (+75 Gold one-time)
+- Per-turn: +6 Gold
 
-This is advanced modding. Full support may require overriding core Governor assignment logic, which can break compatibility.
+This is highly experimental. Success depends on game version and other mods.

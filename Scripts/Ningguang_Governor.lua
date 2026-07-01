@@ -1,6 +1,6 @@
--- Ningguang Governor - Attempt at broader foreign city support
+-- Ningguang Governor - Experimental Foreign City Support
 
-print("[Custom-Gov] Ningguang foreign city support loaded");
+print("[Custom-Gov] Ningguang experimental foreign city script loaded");
 
 local NINGGUANG_TYPE = "GOVERNOR_NINGGUANG";
 local ningguangAssignments = {};
@@ -16,21 +16,21 @@ function OnGovernorAssigned(playerID, governorType, cityID)
     end
 
     ningguangAssignments[playerID] = cityID;
-    print("[Custom-Gov] Ningguang assigned to city ID: " .. tostring(cityID));
+    print("[Custom-Gov] Ningguang assigned to city: " .. tostring(cityID));
 
-    -- Apply different bonuses based on city type (simplified)
+    -- Apply different effects based on city type
     local pCity = CityManager.GetCity(playerID, cityID);
 
     if pCity then
         if pCity:IsCityState() then
-            -- City-State bonuses
-            Players[playerID]:GetInfluence():ChangeInfluencePoints(75);
-            Players[playerID]:GetTreasury():ChangeGoldBalance(150);
-            print("[Custom-Gov] Applied City-State bonuses");
+            -- Strong City-State bonuses
+            Players[playerID]:GetInfluence():ChangeInfluencePoints(100);
+            Players[playerID]:GetTreasury():ChangeGoldBalance(200);
+            print("[Custom-Gov] Strong City-State bonuses applied");
         else
-            -- Normal foreign city (placeholder)
-            Players[playerID]:GetTreasury():ChangeGoldBalance(50);
-            print("[Custom-Gov] Applied foreign city placeholder bonus");
+            -- Foreign player city (experimental)
+            Players[playerID]:GetTreasury():ChangeGoldBalance(75);
+            print("[Custom-Gov] Foreign city bonus applied (experimental)");
         end
     end
 end
@@ -38,7 +38,7 @@ end
 function OnPlayerTurnStarted(playerID)
     if ningguangAssignments[playerID] then
         -- Small per-turn bonus
-        Players[playerID]:GetTreasury():ChangeGoldBalance(5);
+        Players[playerID]:GetTreasury():ChangeGoldBalance(6);
         print("[Custom-Gov] Ningguang per-turn bonus");
     end
 end
@@ -46,4 +46,4 @@ end
 Events.GovernorAssigned.Add(OnGovernorAssigned);
 Events.PlayerTurnStarted.Add(OnPlayerTurnStarted);
 
-print("[Custom-Gov] Ningguang foreign city script initialized");
+print("[Custom-Gov] Ningguang experimental script ready");
