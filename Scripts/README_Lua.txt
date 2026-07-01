@@ -1,7 +1,8 @@
-Update: Accurate City-State Detection
+Warning: Assigning Governors to normal foreign player cities is highly experimental.
 
-- Now properly checks if the assigned city is actually a City-State using pCity:IsCityState()
-- One-time and per-turn bonuses only apply when assigned to a real City-State
-- Tracking improved with ningguangCityState table
+Current implementation:
+- Works for City-States
+- Has placeholder effects for normal foreign cities
+- May cause issues or not work reliably
 
-This version is much more accurate and stable.
+This is advanced modding. Full support may require overriding core Governor assignment logic, which can break compatibility.
