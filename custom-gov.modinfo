@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="8f29d8b4-4d6d-4c7f-a0ce-c6c6f8a2f7a1" version="3">
+<Mod id="8f29d8b4-4d6d-4c7f-a0ce-c6c6f8a2f7a1" version="4">
     <Properties>
         <Name>Custom Governor - Keqing</Name>
-        <Description>Adds Keqing and Ningguang as custom Governors for Civilization VI. Requires the Liyue and Inazuma Pack.</Description>
+        <Description>Adds Keqing and Ningguang as empire-wide custom Governors for Civilization VI. Requires the Liyue and Inazuma Pack.</Description>
         <Authors>Parteicoder</Authors>
         <Created>2026-07-01</Created>
     </Properties>
