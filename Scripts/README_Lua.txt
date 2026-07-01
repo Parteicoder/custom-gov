@@ -1,7 +1,10 @@
-Experimental Foreign City Support Active
+Enhanced Foreign City Support (Experimental)
 
-- City-State: Strong bonuses (+100 Influence, +200 Gold one-time)
-- Foreign cities: Smaller bonus (+75 Gold one-time)
-- Per-turn: +6 Gold
+Inspired by Wuthering Waves Black Shores mod (Aalto & Encore).
 
-This is highly experimental. Success depends on game version and other mods.
+Current effects:
+- City-State: +100 Influence +200 Gold (one-time)
+- Foreign city: +100 Gold +30 Influence (one-time, simplified yield copy)
+- Per-turn: +8 Gold
+
+Note: This is still experimental. Full yield copying from foreign cities would require more advanced tracking.

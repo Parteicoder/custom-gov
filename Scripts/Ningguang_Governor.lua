@@ -1,6 +1,6 @@
--- Ningguang Governor - Experimental Foreign City Support
+-- Ningguang Governor - Enhanced Foreign City Support (Experimental)
 
-print("[Custom-Gov] Ningguang experimental foreign city script loaded");
+print("[Custom-Gov] Ningguang enhanced foreign city script loaded");
 
 local NINGGUANG_TYPE = "GOVERNOR_NINGGUANG";
 local ningguangAssignments = {};
@@ -16,9 +16,8 @@ function OnGovernorAssigned(playerID, governorType, cityID)
     end
 
     ningguangAssignments[playerID] = cityID;
-    print("[Custom-Gov] Ningguang assigned to city: " .. tostring(cityID));
+    print("[Custom-Gov] Ningguang assigned to city ID: " .. tostring(cityID));
 
-    -- Apply different effects based on city type
     local pCity = CityManager.GetCity(playerID, cityID);
 
     if pCity then
@@ -28,17 +27,19 @@ function OnGovernorAssigned(playerID, governorType, cityID)
             Players[playerID]:GetTreasury():ChangeGoldBalance(200);
             print("[Custom-Gov] Strong City-State bonuses applied");
         else
-            -- Foreign player city (experimental)
-            Players[playerID]:GetTreasury():ChangeGoldBalance(75);
-            print("[Custom-Gov] Foreign city bonus applied (experimental)");
+            -- Foreign player city (experimental - inspired by Wuthering Waves mod)
+            -- Give yield copy effect (simplified)
+            Players[playerID]:GetTreasury():ChangeGoldBalance(100);
+            Players[playerID]:GetInfluence():ChangeInfluencePoints(30);
+            print("[Custom-Gov] Foreign city bonus applied (yield copy style)");
         end
     end
 end
 
 function OnPlayerTurnStarted(playerID)
     if ningguangAssignments[playerID] then
-        -- Small per-turn bonus
-        Players[playerID]:GetTreasury():ChangeGoldBalance(6);
+        -- Per-turn bonus
+        Players[playerID]:GetTreasury():ChangeGoldBalance(8);
         print("[Custom-Gov] Ningguang per-turn bonus");
     end
 end
@@ -46,4 +47,4 @@ end
 Events.GovernorAssigned.Add(OnGovernorAssigned);
 Events.PlayerTurnStarted.Add(OnPlayerTurnStarted);
 
-print("[Custom-Gov] Ningguang experimental script ready");
+print("[Custom-Gov] Ningguang enhanced script ready");
