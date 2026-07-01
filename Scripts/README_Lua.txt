@@ -1,12 +1,7 @@
-Ningguang - City-State Effects Added
+Progress Update:
 
-Current effects (placeholder):
-- +50 Influence points when assigned
-- +100 Gold when assigned
+- City-State detection added (basic)
+- One-time bonuses when assigned to City-State: +75 Influence +150 Gold
+- Per-turn bonuses still TODO
 
-These are global for now. Proper City-State detection + per-turn bonuses will be added next.
-
-Important: The current implementation is simplified for testing. Real version needs:
-- Check if target city is actually a City-State
-- Apply ongoing per-turn bonuses instead of one-time
-- Better error handling
+Next: Implement recurring per-turn bonuses using GameEvents or a recurring function.

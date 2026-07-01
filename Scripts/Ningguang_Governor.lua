@@ -1,6 +1,6 @@
--- Ningguang Governor - City-State Effects
+-- Ningguang Governor - Improved City-State Support
 
-print("[Custom-Gov] Ningguang script with City-State effects loaded");
+print("[Custom-Gov] Ningguang advanced script loaded");
 
 local NINGGUANG_TYPE = "GOVERNOR_NINGGUANG";
 
@@ -9,25 +9,36 @@ function IsNingguang(governorType)
     return governorType == NINGGUANG_TYPE;
 end
 
--- Main assignment function
+-- Check if a city is a City-State
+function IsCityState(cityID)
+    local pCity = CityManager.GetCity(playerID, cityID);
+    if pCity then
+        return pCity:IsCityState();
+    end
+    return false;
+end
+
+-- Main assignment handler
 function OnGovernorAssigned(playerID, governorType, cityID)
     if not IsNingguang(governorType) then
         return;
     end
 
-    print("[Custom-Gov] Ningguang assigned!");
+    print("[Custom-Gov] Ningguang assigned to city: " .. tostring(cityID));
 
-    -- TODO: Add proper City-State detection
-    -- For now we apply bonuses globally as placeholder
+    if IsCityState(cityID) then
+        print("[Custom-Gov] Assigned to a City-State!");
 
-    -- Example: Give Influence and Gold when Ningguang is assigned
-    -- This is a simplified version
-    Players[playerID]:GetInfluence():ChangeInfluencePoints(50);
-    Players[playerID]:GetTreasury():ChangeGoldBalance(100);
+        -- Give one-time bonus
+        Players[playerID]:GetInfluence():ChangeInfluencePoints(75);
+        Players[playerID]:GetTreasury():ChangeGoldBalance(150);
 
-    print("[Custom-Gov] Applied placeholder bonuses for Ningguang");
+        -- TODO: Add per-turn bonus here later
+    else
+        print("[Custom-Gov] Not a City-State");
+    end
 end
 
 Events.GovernorAssigned.Add(OnGovernorAssigned);
 
-print("[Custom-Gov] Ningguang City-State effects initialized");
+print("[Custom-Gov] Ningguang script fully initialized");
