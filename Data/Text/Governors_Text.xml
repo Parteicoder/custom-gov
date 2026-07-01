@@ -1,47 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <BaseGameText>
-        <!-- Keqing -->
-        <Row Tag="LOC_GOVERNOR_KEQING_NAME">
+        <!-- Keqing (previous content remains) -->
+        <Row Tag="LOC_GOVERNOR_KEQING_NAME. ">
             <Text>Keqing - Yuheng der Sieben Sterne</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_KEQING_DESCRIPTION">
-            <Text>Starke wirtschaftliche Unterstützung und schnelles Bauen.</Text>
-        </Row>
-
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME">
-            <Text>Elektro-Durchbruch</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
-            <Text>Handelsrouten aus dieser Stadt erhalten +3 Gold.</Text>
-        </Row>
-
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
-            <Text>Blitzschneller Ausbau</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION">
-            <Text>Erbauer erhalten +1 Charge. Bezirke werden 20% schneller gebaut.</Text>
-        </Row>
-
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_NAME">
-            <Text>Geo-Harmonie</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_DESCRIPTION">
-            <Text>Jede verbesserte Ressource gibt +1 Produktion und +1 Gold.</Text>
-        </Row>
-
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_NAME">
-            <Text>Meisterin der Wunder</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_DESCRIPTION">
-            <Text>+3 Great Engineer Punkte.</Text>
-        </Row>
-
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_NAME">
-            <Text>Elektro-Kommando</Text>
-        </Row>
-        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_DESCRIPTION">
-            <Text>Millelith erhalten +7 Kampfstärke.</Text>
         </Row>
 
         <!-- Ningguang -->
@@ -49,14 +11,35 @@
             <Text>Ningguang - Tianquan der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_NINGGUANG_DESCRIPTION">
-            <Text>Politische und wirtschaftliche Einflussnahme. Kann in fremde Städte und Stadtstaaten wirken.</Text>
+            <Text>Politische und wirtschaftliche Macht. Beeinflusst fremde Städte und Stadtstaaten.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_NAME">
             <Text>Vertrag der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION">
-            <Text>In eigenen Städten: +4 Gold auf Handelsrouten. In fremden Städten: Gold-Effekte je nach Beziehung.</Text>
+            <Text>In eigenen Städten: +4 Gold auf Handelsrouten.</Text>
+        </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_NAME">
+            <Text>Wirtschaftlicher Druck</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_DESCRIPTION">
+            <Text>+3 Gold aus Handelsrouten mit fremden Städten.</Text>
+        </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_NAME">
+            <Text>Politischer Einfluss</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_DESCRIPTION">
+            <Text>+2 Einflusspunkte pro Runde auf Stadtstaaten.</Text>
+        </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_3_NAME">
+            <Text>Handelsnetzwerk der Qixing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_3_DESCRIPTION">
+            <Text>+2 Great Merchant Punkte.</Text>
         </Row>
     </BaseGameText>
 </GameData>

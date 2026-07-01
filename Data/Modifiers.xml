@@ -1,137 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Modifiers>
-        <!-- Base: +3 Gold auf Handelsrouten (etwas stärker) -->
+        <!-- Ningguang Base: +4 Gold auf Handelsrouten in eigenen Städten -->
         <Row>
-            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS</ModifierType>
         </Row>
 
-        <!-- Promotion 1: +1 Builder Charge + 20% schneller -->
+        <!-- Promotion 1: Gold aus fremden Städten -->
         <Row>
-            <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_ADJUST_BUILDER_CHARGES</ModifierType>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+            <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_FROM_OTHERS</ModifierType>
         </Row>
 
-        <!-- Promotion 2: +1 Prod +1 Gold auf verbesserte Ressourcen -->
+        <!-- Promotion 2: Influence auf Stadtstaaten -->
         <Row>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IMPROVED_RESOURCE_YIELD</ModifierType>
+            <ModifierId>NINGGUANG_CITY_STATE_INFLUENCE</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN</ModifierType>
         </Row>
 
-        <!-- Promotion 3A: +3 Great Engineer Punkte -->
+        <!-- Promotion 3: Great Merchant Punkte -->
         <Row>
-            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS</ModifierType>
-        </Row>
-
-        <!-- Promotion 3B: Millelith +7 Kampfstärke -->
-        <Row>
-            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
-            <ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
         </Row>
     </Modifiers>
 
     <ModifierArguments>
-        <!-- Trade Gold -->
+        <!-- Base Trade Gold -->
         <Row>
-            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_GOLD</Value>
         </Row>
         <Row>
-            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>4</Value>
+        </Row>
+
+        <!-- Foreign Gold -->
+        <Row>
+            <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
             <Name>Amount</Name>
             <Value>3</Value>
         </Row>
 
-        <!-- Builder -->
+        <!-- City State Influence -->
         <Row>
-            <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
+            <ModifierId>NINGGUANG_CITY_STATE_INFLUENCE</ModifierId>
             <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
-            <Name>Amount</Name>
-            <Value>20</Value>
+            <Value>2</Value>
         </Row>
 
-        <!-- Resource Bonus -->
+        <!-- Great Merchant Points -->
         <Row>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-            <Name>YieldType</Name>
-            <Value>YIELD_PRODUCTION</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-            <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-            <Name>YieldType2</Name>
-            <Value>YIELD_GOLD</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-            <Name>Amount2</Name>
-            <Value>1</Value>
-        </Row>
-
-        <!-- Great Engineer Points -->
-        <Row>
-            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
             <Name>GreatPersonClassType</Name>
-            <Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+            <Value>GREAT_PERSON_CLASS_MERCHANT</Value>
         </Row>
         <Row>
-            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
             <Name>Amount</Name>
-            <Value>3</Value>
-        </Row>
-
-        <!-- Millelith Strength -->
-        <Row>
-            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
-            <Name>UnitType</Name>
-            <Value>UNIT_MILLELITH</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
-            <Name>Amount</Name>
-            <Value>7</Value>
+            <Value>2</Value>
         </Row>
     </ModifierArguments>
 
     <GovernorPromotionModifiers>
         <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
-            <ModifierId>KEQING_TRADE_GOLD</ModifierId>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_BASE</GovernorPromotionType>
+            <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
         </Row>
         <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
-            <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_1</GovernorPromotionType>
+            <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
         </Row>
         <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
-            <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_2</GovernorPromotionType>
+            <ModifierId>NINGGUANG_CITY_STATE_INFLUENCE</ModifierId>
         </Row>
         <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_2</GovernorPromotionType>
-            <ModifierId>KEQING_RESOURCE_BONUS</ModifierId>
-        </Row>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3A</GovernorPromotionType>
-            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
-        </Row>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3B</GovernorPromotionType>
-            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_3</GovernorPromotionType>
+            <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
         </Row>
     </GovernorPromotionModifiers>
 </GameData>

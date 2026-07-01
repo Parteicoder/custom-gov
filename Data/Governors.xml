@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Governors>
-        <!-- Keqing -->
         <Row>
             <GovernorType>GOVERNOR_KEQING</GovernorType>
             <Name>LOC_GOVERNOR_KEQING_NAME</Name>
             <Description>LOC_GOVERNOR_KEQING_DESCRIPTION</Description>
         </Row>
-
-        <!-- Ningguang -->
         <Row>
             <GovernorType>GOVERNOR_NINGGUANG</GovernorType>
             <Name>LOC_GOVERNOR_NINGGUANG_NAME</Name>
@@ -17,7 +14,7 @@
     </Governors>
 
     <GovernorPromotions>
-        <!-- Keqing Promotions -->
+        <!-- Keqing -->
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
             <Name>LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME</Name>
@@ -54,13 +51,34 @@
             <Level>3</Level>
         </Row>
 
-        <!-- Ningguang Base -->
+        <!-- Ningguang -->
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_BASE</GovernorPromotionType>
             <Name>LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_NAME</Name>
             <Description>LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION</Description>
             <GovernorType>GOVERNOR_NINGGUANG</GovernorType>
             <Level>0</Level>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_1</GovernorPromotionType>
+            <Name>LOC_GOVERNOR_PROMOTION_NINGGUANG_1_NAME</Name>
+            <Description>LOC_GOVERNOR_PROMOTION_NINGGUANG_1_DESCRIPTION</Description>
+            <GovernorType>GOVERNOR_NINGGUANG</GovernorType>
+            <Level>1</Level>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_2</GovernorPromotionType>
+            <Name>LOC_GOVERNOR_PROMOTION_NINGGUANG_2_NAME</Name>
+            <Description>LOC_GOVERNOR_PROMOTION_NINGGUANG_2_DESCRIPTION</Description>
+            <GovernorType>GOVERNOR_NINGGUANG</GovernorType>
+            <Level>2</Level>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_3</GovernorPromotionType>
+            <Name>LOC_GOVERNOR_PROMOTION_NINGGUANG_3_NAME</Name>
+            <Description>LOC_GOVERNOR_PROMOTION_NINGGUANG_3_DESCRIPTION</Description>
+            <GovernorType>GOVERNOR_NINGGUANG</GovernorType>
+            <Level>3</Level>
         </Row>
     </GovernorPromotions>
 </GameData>
