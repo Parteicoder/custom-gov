@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <IconDefinitions>
+        <!-- Keqing Portrait (256x256) -->
+        <Row>
+            <Name>ICON_GOVERNOR_KEQING</Name>
+            <Atlas>ICON_ATLAS_GOVERNORS</Atlas>
+            <Index>0</Index>
+        </Row>
+
+        <!-- Promotion Icons (kleiner) -->
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_KEQING_BASE</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>0</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_KEQING_1</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>1</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_KEQING_2</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>2</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_KEQING_3A</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>3</Index>
+        </Row>
+        <Row>
+            <Name>ICON_GOVERNOR_PROMOTION_KEQING_3B</Name>
+            <Atlas>ICON_ATLAS_GOVERNOR_PROMOTIONS</Atlas>
+            <Index>4</Index>
+        </Row>
+    </IconDefinitions>
+</GameData>
