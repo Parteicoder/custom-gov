@@ -1,7 +1,7 @@
-Current Progress:
+Update: Accurate City-State Detection
 
-- One-time bonus when assigned: +75 Influence +150 Gold
-- Per-turn bonus: +3 Influence +8 Gold every turn while assigned
-- Basic tracking of assignment
+- Now properly checks if the assigned city is actually a City-State using pCity:IsCityState()
+- One-time and per-turn bonuses only apply when assigned to a real City-State
+- Tracking improved with ningguangCityState table
 
-Note: The per-turn bonus currently applies globally. Proper City-State check will be added next for accuracy.
+This version is much more accurate and stable.
