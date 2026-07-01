@@ -1,17 +1,25 @@
--- Ningguang Governor Script
--- Allows Ningguang to be assigned to City-States (similar to Amani)
+-- Ningguang Governor Lua Script
+-- Goal: Allow Ningguang to be assigned to City-States and apply custom effects
 
--- This is a basic starting point. Full support for enemy cities requires deeper Lua hooks.
+print("[Custom-Gov] Ningguang Governor script loaded");
 
-print("Ningguang Governor script loaded");
+-- Configuration
+local NINGGUANG_GOVERNOR_TYPE = "GOVERNOR_NINGGUANG";
 
--- Example: Increase influence when Ningguang is assigned to a city-state
--- (This is placeholder code - real implementation needs GameEvents)
-
-function OnGovernorAssigned(playerID, governorID, cityStateID)
-    -- TODO: Check if governor is Ningguang and city is a city-state
-    -- Then apply custom effects
+-- Helper function to check if a governor is Ningguang
+function IsNingguang(governorType)
+    return governorType == NINGGUANG_GOVERNOR_TYPE;
 end
 
--- Register the event (placeholder)
+-- Event: When a Governor is assigned
+-- This is a simplified version. Real implementation needs proper GameEvents.
+function OnGovernorAssigned(playerID, governorID, cityID)
+    -- TODO: Add proper checks here
+    -- For now we just print debug info
+    print("[Custom-Gov] Governor assigned - Player: " .. tostring(playerID) .. ", Governor: " .. tostring(governorID) .. ", City: " .. tostring(cityID));
+end
+
+-- Register the event (this may need adjustment depending on Civ 6 version)
 -- Events.GovernorAssigned.Add(OnGovernorAssigned);
+
+print("[Custom-Gov] Ningguang script initialized");
