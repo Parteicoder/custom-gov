@@ -22,12 +22,28 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 - **Keqing - Yuheng der Sieben Sterne** als Gouverneurin
 - **Ningguang - Tianquan der Qixing** als Gouverneurin
 - Promotion-Trees mit Grundfähigkeit und mehreren Aufwertungen
+- Reichsweite Effekte statt reiner Stadtboni
 - Platzhalter-Icons und Platzhalter-Porträts aus vorhandenen Civ-VI-Governor-Ressourcen
-- Ningguang-Boni für Handel, Stadtstaaten-Einfluss und Große-Händler-Punkte
+
+## Reichsweite Effekte
+
+### Keqing
+
+- Grundfähigkeit: +1 Produktion in allen Städten
+- Aufwertung 1: +2 Gold in allen Städten
+- Aufwertung 2: +15 % Produktion für Bezirke in allen Städten
+- Aufwertung 3A: +1 Wissenschaft in allen Städten
+- Aufwertung 3B: +1 Kultur in allen Städten
+
+### Ningguang
+
+- Grundfähigkeit: +4 Gold auf Handelsrouten aus eigenen Städten
+- Aufwertung 1: +3 Gold aus Handelsrouten mit fremden Städten
+- Aufwertung 2: +2 Einflusspunkte pro Runde auf Stadtstaaten
+- Aufwertung 3: +2 Große-Händler-Punkte pro Runde
 
 ## Bekannte Einschränkungen
 
-- Keqing hat aktuell vor allem Struktur, Texte und Promotions, aber noch keine ausgearbeiteten eigenen Modifier-Effekte.
 - Icons und Porträts sind Platzhalter.
 - Ein echter Ingame-Test in Civilization VI ist nötig, um Datenbank- und UI-Fehler endgültig auszuschließen.
 
@@ -39,6 +55,7 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 4. Aktiviere **Custom Governor - Keqing** im Spiel.
 5. Starte ein neues Spiel mit Rise and Fall / Gathering Storm.
 6. Öffne das Gouverneursmenü und prüfe, ob Keqing und Ningguang ohne `LOC_...`-Fehler erscheinen.
+7. Prüfe im Spiel, ob die reichsweiten Werte nach Ernennung und Aufwertung der Gouverneure steigen.
 
 ## Credits
 
