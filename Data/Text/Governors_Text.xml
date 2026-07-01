@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <BaseGameText>
-        <!-- Keqing (previous content remains) -->
-        <Row Tag="LOC_GOVERNOR_KEQING_NAME. ">
-            <Text>Keqing - Yuheng der Sieben Sterne</Text>
+        <Row Tag="LOC_GOVERNOR_KEQING_NAME">
+            <Text>Keqing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_KEQING_TITLE">
+            <Text>Yuheng der Sieben Sterne</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_KEQING_SHORT_TITLE">
+            <Text>Yuheng</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_KEQING_DESCRIPTION">
+            <Text>Eine schnelle, entschlossene Gouverneurin mit Fokus auf Handel, Aufbau und gezielte Stadtentwicklung.</Text>
         </Row>
 
-        <!-- Ningguang -->
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME">
+            <Text>Blitzender Aufbau</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
+            <Text>Grundfähigkeit. Stärkt die Entwicklung der zugewiesenen Stadt.</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
+            <Text>Jadeklinge der Verwaltung</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION">
+            <Text>Verbessert die wirtschaftliche Verwaltung der Stadt.</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_NAME">
+            <Text>Yuhengs Planung</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_2_DESCRIPTION">
+            <Text>Fördert effiziente Stadtentwicklung und Infrastruktur.</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_NAME">
+            <Text>Schneller Beschluss</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_DESCRIPTION">
+            <Text>Eine offensive Verwaltungsoption für starke Aufbauphasen.</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_NAME">
+            <Text>Ordnung der Qixing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_DESCRIPTION">
+            <Text>Eine stabile Verwaltungsoption für langfristige Kontrolle.</Text>
+        </Row>
+
         <Row Tag="LOC_GOVERNOR_NINGGUANG_NAME">
-            <Text>Ningguang - Tianquan der Qixing</Text>
+            <Text>Ningguang</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_NINGGUANG_TITLE">
+            <Text>Tianquan der Qixing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_NINGGUANG_SHORT_TITLE">
+            <Text>Tianquan</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_NINGGUANG_DESCRIPTION">
             <Text>Politische und wirtschaftliche Macht. Beeinflusst fremde Städte und Stadtstaaten.</Text>
@@ -20,26 +64,23 @@
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION">
             <Text>In eigenen Städten: +4 Gold auf Handelsrouten.</Text>
         </Row>
-
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_NAME">
             <Text>Wirtschaftlicher Druck</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_1_DESCRIPTION">
             <Text>+3 Gold aus Handelsrouten mit fremden Städten.</Text>
         </Row>
-
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_NAME">
             <Text>Politischer Einfluss</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_2_DESCRIPTION">
             <Text>+2 Einflusspunkte pro Runde auf Stadtstaaten.</Text>
         </Row>
-
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_3_NAME">
             <Text>Handelsnetzwerk der Qixing</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_3_DESCRIPTION">
-            <Text>+2 Great Merchant Punkte.</Text>
+            <Text>+2 Große-Händler-Punkte pro Runde.</Text>
         </Row>
     </BaseGameText>
 </GameData>
