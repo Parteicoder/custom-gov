@@ -1,21 +1,13 @@
--- Ningguang Governor - Improved City-State Support
+-- Ningguang Governor - Per-Turn City-State Bonuses
 
-print("[Custom-Gov] Ningguang advanced script loaded");
+print("[Custom-Gov] Ningguang with per-turn effects loaded");
 
 local NINGGUANG_TYPE = "GOVERNOR_NINGGUANG";
+local ningguangAssignments = {}; -- Track where Ningguang is assigned
 
 -- Check if governor is Ningguang
 function IsNingguang(governorType)
     return governorType == NINGGUANG_TYPE;
-end
-
--- Check if a city is a City-State
-function IsCityState(cityID)
-    local pCity = CityManager.GetCity(playerID, cityID);
-    if pCity then
-        return pCity:IsCityState();
-    end
-    return false;
 end
 
 -- Main assignment handler
@@ -24,21 +16,26 @@ function OnGovernorAssigned(playerID, governorType, cityID)
         return;
     end
 
-    print("[Custom-Gov] Ningguang assigned to city: " .. tostring(cityID));
+    ningguangAssignments[playerID] = cityID;
+    print("[Custom-Gov] Ningguang assigned to city ID: " .. tostring(cityID));
 
-    if IsCityState(cityID) then
-        print("[Custom-Gov] Assigned to a City-State!");
+    -- One-time bonus
+    Players[playerID]:GetInfluence():ChangeInfluencePoints(75);
+    Players[playerID]:GetTreasury():ChangeGoldBalance(150);
+end
 
-        -- Give one-time bonus
-        Players[playerID]:GetInfluence():ChangeInfluencePoints(75);
-        Players[playerID]:GetTreasury():ChangeGoldBalance(150);
-
-        -- TODO: Add per-turn bonus here later
-    else
-        print("[Custom-Gov] Not a City-State");
+-- Per-turn bonus
+function OnPlayerTurnStarted(playerID)
+    local assignedCity = ningguangAssignments[playerID];
+    if assignedCity then
+        -- Give small per-turn bonus
+        Players[playerID]:GetInfluence():ChangeInfluencePoints(3);
+        Players[playerID]:GetTreasury():ChangeGoldBalance(8);
+        print("[Custom-Gov] Ningguang per-turn bonus applied");
     end
 end
 
 Events.GovernorAssigned.Add(OnGovernorAssigned);
+Events.PlayerTurnStarted.Add(OnPlayerTurnStarted);
 
-print("[Custom-Gov] Ningguang script fully initialized");
+print("[Custom-Gov] Ningguang per-turn system initialized");

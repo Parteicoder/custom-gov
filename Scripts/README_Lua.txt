@@ -1,7 +1,7 @@
-Progress Update:
+Current Progress:
 
-- City-State detection added (basic)
-- One-time bonuses when assigned to City-State: +75 Influence +150 Gold
-- Per-turn bonuses still TODO
+- One-time bonus when assigned: +75 Influence +150 Gold
+- Per-turn bonus: +3 Influence +8 Gold every turn while assigned
+- Basic tracking of assignment
 
-Next: Implement recurring per-turn bonuses using GameEvents or a recurring function.
+Note: The per-turn bonus currently applies globally. Proper City-State check will be added next for accuracy.
