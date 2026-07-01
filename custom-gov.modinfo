@@ -2,18 +2,20 @@
 <Mod id="custom-gov-keqing" version="1">
     <Properties>
         <Name>Custom Governor - Keqing</Name>
-        <Description>Keqing als einzigartiger Gouverneur für Civilization VI</Description>
+        <Description>Adds Keqing as a unique Governor for Civilization VI. Designed as an add-on for the Liyue civilization mod.</Description>
         <Authors>Parteicoder</Authors>
+        <Created>2026-07-01</Created>
     </Properties>
 
     <Dependencies>
-        <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Rise and Fall"/>
-        <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Gathering Storm"/>
+        <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Rise and Fall" />
+        <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Gathering Storm" />
     </Dependencies>
 
     <Files>
         <File>Data/Governors.xml</File>
         <File>Data/Modifiers.xml</File>
         <File>Data/Text/Governors_Text.xml</File>
+        <File>Icons/Icons.xml</File>
     </Files>
 </Mod>

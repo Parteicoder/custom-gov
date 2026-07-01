@@ -1,0 +1,15 @@
+# Auto detect text files and normalize to LF
+* text=auto
+
+# Civ 6 XML and Lua files should use LF
+*.xml text eol=lf
+*.lua text eol=lf
+*.sql text eol=lf
+*.modinfo text eol=lf
+
+# Binary files (images, sounds)
+*.dds binary
+*.bnk binary
+*.wem binary
+*.png binary
+*.jpg binary

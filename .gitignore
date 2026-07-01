@@ -1,0 +1,26 @@
+# Civ 6 Mod .gitignore
+
+# Build / Release Ordner
+LiyueInazumaRelease/
+Release/
+Build/
+
+# Temporäre Dateien
+*.tmp
+*.log
+*.bak
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Große Binärdateien (falls vorhanden)
+*.zip
+*.rar
+
+# Civ 6 spezifisch
+*.modinfo.bak
