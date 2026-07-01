@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="custom-gov-keqing" version="1">
+<Mod id="8f29d8b4-4d6d-4c7f-a0ce-c6c6f8a2f7a1" version="2">
     <Properties>
         <Name>Custom Governor - Keqing</Name>
-        <Description>Adds Keqing as a unique Governor for Civilization VI. Designed as an add-on for the Liyue civilization mod.</Description>
+        <Description>Adds Keqing and Ningguang as custom Governors for Civilization VI. Designed as an add-on for the Liyue civilization mod.</Description>
         <Authors>Parteicoder</Authors>
         <Created>2026-07-01</Created>
     </Properties>
@@ -18,4 +18,26 @@
         <File>Data/Text/Governors_Text.xml</File>
         <File>Icons/Icons.xml</File>
     </Files>
+
+    <InGameActions>
+        <UpdateDatabase id="CustomGovGameplay">
+            <Properties>
+                <LoadOrder>2000</LoadOrder>
+            </Properties>
+            <File>Data/Governors.xml</File>
+            <File>Data/Modifiers.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="CustomGovText">
+            <Properties>
+                <LoadOrder>2000</LoadOrder>
+            </Properties>
+            <File>Data/Text/Governors_Text.xml</File>
+        </UpdateText>
+        <UpdateIcons id="CustomGovIcons">
+            <Properties>
+                <LoadOrder>2000</LoadOrder>
+            </Properties>
+            <File>Icons/Icons.xml</File>
+        </UpdateIcons>
+    </InGameActions>
 </Mod>
