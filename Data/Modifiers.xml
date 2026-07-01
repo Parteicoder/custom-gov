@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Modifiers>
-        <!-- Ningguang Base: +4 Gold auf Handelsrouten in eigenen Städten -->
+        <!-- Keqing Base: +1 Production in all cities across the empire -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+        </Row>
+
+        <!-- Keqing Promotion 1: +2 Gold in all cities across the empire -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+        </Row>
+
+        <!-- Keqing Promotion 2: +15% district production in all cities -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_ALL_DISTRICTS_PRODUCTION</ModifierType>
+        </Row>
+
+        <!-- Keqing Promotion 3A: +1 Science in all cities across the empire -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+        </Row>
+
+        <!-- Keqing Promotion 3B: +1 Culture in all cities across the empire -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
+        </Row>
+
+        <!-- Ningguang Base: +4 Gold on trade routes from all cities -->
         <Row>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_TO_OTHERS</ModifierType>
         </Row>
 
-        <!-- Promotion 1: Gold aus fremden Städten -->
+        <!-- Ningguang Promotion 1: +3 Gold from foreign trade routes empire-wide -->
         <Row>
             <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_FROM_OTHERS</ModifierType>
         </Row>
 
-        <!-- Promotion 2: Influence auf Stadtstaaten -->
+        <!-- Ningguang Promotion 2: +2 Influence points per turn empire-wide -->
         <Row>
             <ModifierId>NINGGUANG_CITY_STATE_INFLUENCE</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN</ModifierType>
         </Row>
 
-        <!-- Promotion 3: Great Merchant Punkte -->
+        <!-- Ningguang Promotion 3: +2 Great Merchant points per turn empire-wide -->
         <Row>
             <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS</ModifierType>
@@ -27,7 +57,62 @@
     </Modifiers>
 
     <ModifierArguments>
-        <!-- Base Trade Gold -->
+        <!-- Keqing empire production -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+
+        <!-- Keqing empire gold -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+
+        <!-- Keqing district production -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>15</Value>
+        </Row>
+
+        <!-- Keqing empire science -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_SCIENCE</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+
+        <!-- Keqing empire culture -->
+        <Row>
+            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_CULTURE</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+
+        <!-- Ningguang trade gold -->
         <Row>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
             <Name>YieldType</Name>
@@ -39,7 +124,7 @@
             <Value>4</Value>
         </Row>
 
-        <!-- Foreign Gold -->
+        <!-- Ningguang foreign gold -->
         <Row>
             <ModifierId>NINGGUANG_FOREIGN_GOLD</ModifierId>
             <Name>YieldType</Name>
@@ -51,14 +136,14 @@
             <Value>3</Value>
         </Row>
 
-        <!-- City State Influence -->
+        <!-- Ningguang city-state influence -->
         <Row>
             <ModifierId>NINGGUANG_CITY_STATE_INFLUENCE</ModifierId>
             <Name>Amount</Name>
             <Value>2</Value>
         </Row>
 
-        <!-- Great Merchant Points -->
+        <!-- Ningguang Great Merchant points -->
         <Row>
             <ModifierId>NINGGUANG_MERCHANT_POINTS</ModifierId>
             <Name>GreatPersonClassType</Name>
@@ -72,6 +157,26 @@
     </ModifierArguments>
 
     <GovernorPromotionModifiers>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
+            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
+            <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_2</GovernorPromotionType>
+            <ModifierId>KEQING_EMPIRE_DISTRICT_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3A</GovernorPromotionType>
+            <ModifierId>KEQING_EMPIRE_SCIENCE</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3B</GovernorPromotionType>
+            <ModifierId>KEQING_EMPIRE_CULTURE</ModifierId>
+        </Row>
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_NINGGUANG_BASE</GovernorPromotionType>
             <ModifierId>NINGGUANG_TRADE_GOLD</ModifierId>
