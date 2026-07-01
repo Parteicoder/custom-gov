@@ -22,18 +22,21 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 - **Keqing - Yuheng der Sieben Sterne** als Gouverneurin
 - **Ningguang - Tianquan der Qixing** als Gouverneurin
 - Promotion-Trees mit Grundfähigkeit und mehreren Aufwertungen
-- Reichsweite Effekte statt reiner Stadtboni
+- Keqing-Handelsroutenmechanik für Liyue
+- Reichsweite Effekte bei späteren Aufwertungen
 - Platzhalter-Icons und Platzhalter-Porträts aus vorhandenen Civ-VI-Governor-Ressourcen
 
-## Reichsweite Effekte
+## Effekte
 
 ### Keqing
 
-- Grundfähigkeit: +1 Produktion in allen Städten
+- Grundfähigkeit: Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.
 - Aufwertung 1: +2 Gold in allen Städten
 - Aufwertung 2: +15 % Produktion für Bezirke in allen Städten
 - Aufwertung 3A: +1 Wissenschaft in allen Städten
 - Aufwertung 3B: +1 Kultur in allen Städten
+
+Die Bevölkerungsmechanik wird über `Scripts/Keqing_TradePopulation.lua` geladen und reagiert auf `Events.TradeRouteActivityChanged`.
 
 ### Ningguang
 
@@ -45,7 +48,7 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 ## Bekannte Einschränkungen
 
 - Icons und Porträts sind Platzhalter.
-- Ein echter Ingame-Test in Civilization VI ist nötig, um Datenbank- und UI-Fehler endgültig auszuschließen.
+- Ein echter Ingame-Test in Civilization VI ist nötig, um Datenbank-, Script- und UI-Fehler endgültig auszuschließen.
 
 ## Installation
 
@@ -55,7 +58,8 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 4. Aktiviere **Custom Governor - Keqing** im Spiel.
 5. Starte ein neues Spiel mit Rise and Fall / Gathering Storm.
 6. Öffne das Gouverneursmenü und prüfe, ob Keqing und Ningguang ohne `LOC_...`-Fehler erscheinen.
-7. Prüfe im Spiel, ob die reichsweiten Werte nach Ernennung und Aufwertung der Gouverneure steigen.
+7. Ernenne Keqing und starte eine internationale Handelsroute aus einer Liyue-Stadt.
+8. Prüfe im Spiel und in `Lua.log`, ob bei erfolgreichem Wurf 1 Bevölkerung von der Zielstadt in die Ursprungsstadt gezogen wird.
 
 ## Credits
 
