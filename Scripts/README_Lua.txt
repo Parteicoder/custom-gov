@@ -1,15 +1,12 @@
-Ningguang Lua Development - Current Focus: City-States
+Ningguang - City-State Effects Added
 
-We are currently implementing support for assigning Ningguang to City-States (similar to Amani).
+Current effects (placeholder):
+- +50 Influence points when assigned
+- +100 Gold when assigned
 
-Planned effects when assigned to a City-State:
-- Increased Influence per turn
-- Gold bonus
-- Possibly faster Suzerain status
+These are global for now. Proper City-State detection + per-turn bonuses will be added next.
 
-Next steps:
-1. Properly detect if the target city is a City-State
-2. Apply Influence and Gold bonuses
-3. Test stability
-
-After City-States are working, we can discuss extending to normal foreign cities.
+Important: The current implementation is simplified for testing. Real version needs:
+- Check if target city is actually a City-State
+- Apply ongoing per-turn bonuses instead of one-time
+- Better error handling
