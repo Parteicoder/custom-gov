@@ -24,29 +24,27 @@ Diese ID ist in `custom-gov.modinfo` als Abhängigkeit eingetragen. Dadurch soll
 - Promotion-Trees mit Grundfähigkeit und mehreren Aufwertungen
 - Keqing-Handelsroutenmechanik für Liyue
 - Ningguang als Tag-Team-Ergänzung mit zusätzlichem Handelsdruck
-- Reichsweite Effekte bei späteren Aufwertungen
+- Script-getriebene Promotion-Effekte bei erfolgreichen Handelsrouten
 - Platzhalter-Icons und Platzhalter-Porträts aus vorhandenen Civ-VI-Governor-Ressourcen
 
 ## Effekte
 
 ### Keqing
 
-- Grundfähigkeit: Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.
-- Tag-Team mit Ningguang: Wenn Ningguang ebenfalls eingesetzt ist, steigt die Chance auf 50 %.
-- Aufwertung 1: +2 Gold in allen Städten
-- Aufwertung 2: +15 % Produktion für Bezirke in allen Städten
-- Aufwertung 3A: +1 Wissenschaft in allen Städten
-- Aufwertung 3B: +1 Kultur in allen Städten
-
-Die Bevölkerungsmechanik wird über `Scripts/Keqing_TradePopulation.lua` geladen und reagiert auf `Events.TradeRouteActivityChanged`.
+- **Magnet des Hafens:** Internationale Handelsrouten aus Liyue-Städten haben eine Chance von 35 %, 1 Bevölkerung aus der Zielstadt in die Ursprungsstadt zu ziehen. Zielstädte werden nie unter 1 Bevölkerung reduziert.
+- **Jadeklinge der Verwaltung:** Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält die Ursprungsstadt +25 Produktion und Liyue erhält +50 Gold.
+- **Yuhengs Planung:** Erhöht die Chance von Keqings Handelsrouten-Effekt um +15 Prozentpunkte.
+- **Schneller Beschluss:** Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält Liyue +30 Wissenschaft und +30 Kultur.
+- **Ordnung der Qixing:** Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält die Ursprungsstadt +3 Loyalität und die Zielstadt verliert zusätzlich 3 Loyalität.
 
 ### Ningguang
 
-- Grundfähigkeit: +4 Gold auf Handelsrouten aus eigenen Städten
-- Tag-Team mit Keqing: Wenn Keqing erfolgreich 1 Bevölkerung über eine internationale Handelsroute abgreift, verliert die Zielstadt zusätzlich 5 Loyalität. Das stellt wirtschaftlichen Druck, Unruhe und sinkende Zufriedenheit dar.
-- Aufwertung 1: +3 Gold aus Handelsrouten mit fremden Städten
-- Aufwertung 2: +2 Einflusspunkte pro Runde auf Stadtstaaten
-- Aufwertung 3: +2 Große-Händler-Punkte pro Runde
+- **Vertrag der Qixing:** Reichsweit +4 Gold auf Handelsrouten aus eigenen Städten. Tag-Team: Wenn Keqing eingesetzt ist, erhöht Ningguang die Chance von Keqings Handelsrouten-Effekt um +15 Prozentpunkte. Bei Erfolg verliert die Zielstadt zusätzlich 5 Loyalität.
+- **Wirtschaftlicher Druck:** Reichsweit +3 Gold aus Handelsrouten mit fremden Städten. Tag-Team: Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, erhält Liyue zusätzlich +75 Gold.
+- **Politischer Einfluss:** Reichsweit +2 Einflusspunkte pro Runde auf Stadtstaaten. Tag-Team: Wenn Keqings Handelsrouten-Effekt erfolgreich Bevölkerung abgreift, verliert die Zielstadt zusätzlich 5 Loyalität.
+- **Handelsnetzwerk der Qixing:** Reichsweit +2 Große-Händler-Punkte pro Runde.
+
+Die Bevölkerungs- und Tag-Team-Mechanik wird über `Scripts/Keqing_TradePopulation.lua` geladen und reagiert auf `Events.TradeRouteActivityChanged`.
 
 ## Bekannte Einschränkungen
 
