@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <BaseGameText>
+        <!-- Keqing -->
         <Row Tag="LOC_GOVERNOR_KEQING_NAME">
             <Text>Keqing - Yuheng der Sieben Sterne</Text>
         </Row>
@@ -33,7 +34,7 @@
             <Text>Meisterin der Wunder</Text>
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3A_DESCRIPTION">
-            <Text>+3 Great Engineer Punkte. Starke Synergie mit Donnernder Antrieb.</Text>
+            <Text>+3 Great Engineer Punkte.</Text>
         </Row>
 
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_NAME">
@@ -41,6 +42,21 @@
         </Row>
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_3B_DESCRIPTION">
             <Text>Millelith erhalten +7 Kampfstärke.</Text>
+        </Row>
+
+        <!-- Ningguang -->
+        <Row Tag="LOC_GOVERNOR_NINGGUANG_NAME">
+            <Text>Ningguang - Tianquan der Qixing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_NINGGUANG_DESCRIPTION">
+            <Text>Politische und wirtschaftliche Einflussnahme. Kann in fremde Städte und Stadtstaaten wirken.</Text>
+        </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_NAME">
+            <Text>Vertrag der Qixing</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_NINGGUANG_BASE_DESCRIPTION">
+            <Text>In eigenen Städten: +4 Gold auf Handelsrouten. In fremden Städten: Gold-Effekte je nach Beziehung.</Text>
         </Row>
     </BaseGameText>
 </GameData>
