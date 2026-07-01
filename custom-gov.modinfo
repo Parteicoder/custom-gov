@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="8f29d8b4-4d6d-4c7f-a0ce-c6c6f8a2f7a1" version="5">
+<Mod id="8f29d8b4-4d6d-4c7f-a0ce-c6c6f8a2f7a1" version="6">
     <Properties>
         <Name>Custom Governor - Keqing</Name>
-        <Description>Adds Keqing and Ningguang as custom Governors for Civilization VI. Keqing strengthens Liyue trade routes with a chance to draw population from foreign cities. Requires the Liyue and Inazuma Pack.</Description>
+        <Description>Adds Keqing and Ningguang as custom Governors for Civilization VI. Keqing strengthens Liyue trade routes with a chance to draw population from foreign cities; Ningguang adds tag-team pressure and unrest. Requires the Liyue and Inazuma Pack.</Description>
         <Authors>Parteicoder</Authors>
         <Created>2026-07-01</Created>
     </Properties>
