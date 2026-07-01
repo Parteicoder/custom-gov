@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <Modifiers>
-        <!-- Keqing Base: +1 Production in all cities across the empire -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE</ModifierType>
-        </Row>
-
         <!-- Keqing Promotion 1: +2 Gold in all cities across the empire -->
         <Row>
             <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
@@ -57,18 +51,6 @@
     </Modifiers>
 
     <ModifierArguments>
-        <!-- Keqing empire production -->
-        <Row>
-            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
-            <Name>YieldType</Name>
-            <Value>YIELD_PRODUCTION</Value>
-        </Row>
-        <Row>
-            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
-            <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-
         <!-- Keqing empire gold -->
         <Row>
             <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
@@ -157,10 +139,6 @@
     </ModifierArguments>
 
     <GovernorPromotionModifiers>
-        <Row>
-            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
-            <ModifierId>KEQING_EMPIRE_PRODUCTION</ModifierId>
-        </Row>
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
             <ModifierId>KEQING_EMPIRE_GOLD</ModifierId>
