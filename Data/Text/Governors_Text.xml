@@ -14,5 +14,12 @@
         <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION">
             <Text>Handelsrouten aus dieser Stadt erhalten +2 Gold.</Text>
         </Row>
+
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_NAME">
+            <Text>Blitzschneller Ausbau</Text>
+        </Row>
+        <Row Tag="LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION">
+            <Text>Erbauer erhalten +1 Charge. Bezirke werden 15% schneller gebaut.</Text>
+        </Row>
     </BaseGameText>
 </GameData>

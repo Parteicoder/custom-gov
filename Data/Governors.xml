@@ -9,12 +9,22 @@
     </Governors>
 
     <GovernorPromotions>
+        <!-- Base Ability -->
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_BASE</GovernorPromotionType>
             <Name>LOC_GOVERNOR_PROMOTION_KEQING_BASE_NAME</Name>
             <Description>LOC_GOVERNOR_PROMOTION_KEQING_BASE_DESCRIPTION</Description>
             <GovernorType>GOVERNOR_KEQING</GovernorType>
             <Level>0</Level>
+        </Row>
+
+        <!-- Promotion 1: Blitzschneller Ausbau -->
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
+            <Name>LOC_GOVERNOR_PROMOTION_KEQING_1_NAME</Name>
+            <Description>LOC_GOVERNOR_PROMOTION_KEQING_1_DESCRIPTION</Description>
+            <GovernorType>GOVERNOR_KEQING</GovernorType>
+            <Level>1</Level>
         </Row>
     </GovernorPromotions>
 </GameData>
