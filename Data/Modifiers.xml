@@ -12,11 +12,27 @@
             <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_BUILDER_CHARGES</ModifierType>
         </Row>
-
-        <!-- Promotion 1: Schnelleres Bauen von Bezirken -->
         <Row>
             <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+        </Row>
+
+        <!-- Promotion 2: Resource Boni -->
+        <Row>
+            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IMPROVED_RESOURCE_YIELD</ModifierType>
+        </Row>
+
+        <!-- Promotion 3A: Great Engineer Points -->
+        <Row>
+            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+        </Row>
+
+        <!-- Promotion 3B: Military (Millelith) -->
+        <Row>
+            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
+            <ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
         </Row>
     </Modifiers>
 
@@ -33,18 +49,52 @@
             <Value>2</Value>
         </Row>
 
-        <!-- Builder Charge -->
+        <!-- Builder -->
         <Row>
             <ModifierId>KEQING_BUILDER_CHARGE</ModifierId>
             <Name>Amount</Name>
             <Value>1</Value>
         </Row>
-
-        <!-- District Production -->
         <Row>
             <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
             <Name>Amount</Name>
             <Value>15</Value>
+        </Row>
+
+        <!-- Resource Production -->
+        <Row>
+            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+
+        <!-- Great Engineer Points -->
+        <Row>
+            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+
+        <!-- Millelith Strength -->
+        <Row>
+            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
+            <Name>UnitType</Name>
+            <Value>UNIT_MILLELITH</Value>
+        </Row>
+        <Row>
+            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
+            <Name>Amount</Name>
+            <Value>5</Value>
         </Row>
     </ModifierArguments>
 
@@ -60,6 +110,18 @@
         <Row>
             <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_1</GovernorPromotionType>
             <ModifierId>KEQING_DISTRICT_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_2</GovernorPromotionType>
+            <ModifierId>KEQING_RESOURCE_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3A</GovernorPromotionType>
+            <ModifierId>KEQING_ENGINEER_POINTS</ModifierId>
+        </Row>
+        <Row>
+            <GovernorPromotionType>GOVERNOR_PROMOTION_KEQING_3B</GovernorPromotionType>
+            <ModifierId>KEQING_MILLELITH_STRENGTH</ModifierId>
         </Row>
     </GovernorPromotionModifiers>
 </GameData>
